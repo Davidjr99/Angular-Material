@@ -5,7 +5,8 @@
   <button (click)= "adicionarTarefa()" type="button">Adicionar</button>
    <mat-card *ngFor="let tarefa of tarefas">
     <mat-card-content>
-      {{ tarefa }}
+      {{ tarefa.name }}
+      <mat-icon (click)="removerTarefa(tarefa.id)" aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon>
     </mat-card-content>
   </mat-card>
 

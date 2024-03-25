@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { CalendarioComponent } from './calendario/calendario.component';
 import {provideNativeDateAdapter} from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import {provideNativeDateAdapter} from '@angular/material/core';
     NavbarModule,
     FormsModule,
     MatCardModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatIconModule
+
   ],
   providers: [
     provideAnimationsAsync(),

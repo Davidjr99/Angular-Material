@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+
+interface Task{
+  id: Number;
+  name: String;
+}
+
 @Component({
   selector: 'minhas-anotacoes',
   templateUrl: './minhas-anotacoes.component.html',
@@ -9,14 +15,24 @@ export class MinhasAnotacoesComponent {
 
   tarefa: String = '';
 
-tarefas: Array<String> =
-['tarefa 1',
-'tarefa 2',
-'tarefa 3'];
+
+tarefas: Task[] = [{ id: 1, name: 'Tarefa 1'}];
+nextId: number = 2;
+
 
 adicionarTarefa() {
-  this.tarefas.push(this.tarefa);
-  this.tarefa = "";
+ const newTask: Task = {
+  id: this.nextId,
+  name: this.tarefa,
+ };
+ this.tarefas.push(newTask);
+ this.tarefa = '';
+ this.nextId++;
 }
 
+removerTarefa(taskId: Number) {
+  this.tarefas = this.tarefas.filter(task => task.id !== taskId);
+
+
+}
 }
