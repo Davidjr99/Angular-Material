@@ -1,0 +1,43 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: rgb(142, 235, 134);
+}
+.logo{
+  color: rgb(42, 95, 165);
+}
+
+.mat-menu-item1{
+  background-color: rgb(172, 87, 87);
+  color: white;
+  width: 200px;
+  height: 120px;
+  white-space: nowrap;
+}
+.mat-menu-item2{
+  background-color: rgb(172, 87, 87);
+  color: white;
+  width: 200px;
+  height: 120px;
+  white-space: nowrap;
+}
+.mat-menu-item3{
+  background-color: rgb(172, 87, 87);
+  color: white;
+  width: 200px;
+  height: 120px;
+  white-space: nowrap;
+}
+.mat-menu-item4{
+  background-color: rgb(172, 87, 87);
+  color: white;
+  width: 200px;
+  height: 120px;
+  white-space: nowrap;
+}
+
+.mat-mdc-menu-content {
+  padding: 0px !important;
+}

@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+  </button>
+  <mat-menu #menu class="conteudo_menu" >
+    <button mat-menu-item class="mat-menu-item5" (click)="router.navigate(['/'])">Home</button>
+    <button mat-menu-item class="mat-menu-item1" (click)="router.navigate(['/anotacoes'])">Minhas anotações</button>
+    <button mat-menu-item class="mat-menu-item2" (click)="router.navigate(['/calendario'])">Calendario</button>
+    <button mat-menu-item class="mat-menu-item3" (click)="router.navigate(['/guias'])">Guias</button>
+    <button mat-menu-item class="mat-menu-item4" (click)="router.navigate(['/como usar'])">Como Usar</button>
+  </mat-menu>
+  <span class="logo">ANOTAÇÕES</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="conteudo">
+
+
+
+</div>

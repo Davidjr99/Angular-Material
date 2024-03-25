@@ -1,0 +1,15 @@
+<div style="text-align: center">
+
+  <h1> Tem Uma Nova Anotação ?</h1>
+  <input [(ngModel)]="tarefa" type="text">
+  <button (click)= "adicionarTarefa()" type="button">Adicionar</button>
+   <mat-card *ngFor="let tarefa of tarefas">
+    <mat-card-content>
+      {{ tarefa }}
+    </mat-card-content>
+  </mat-card>
+
+
+
+</div>
+
