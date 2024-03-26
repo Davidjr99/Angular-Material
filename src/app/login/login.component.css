@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.fundoLogin{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(40, 168, 168, 0.568);
+}
+.tituloPrincipal{
+  font-family: 'Rubik Scribble';
+  font-size: 100px;
+  display: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+
+
+
+}
+.btn-login{
+  width: 100px; /* largura do contêiner */
+  height: 40px; /* altura do contêiner */
+  background-color: #F7EEDD; /* cor de fundo do contêiner */
+  border-radius: 15px; /* arredondamento das bordas do contêiner */
+  display: flex;
+  justify-content: center;
+}
+

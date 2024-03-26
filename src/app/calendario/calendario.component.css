@@ -1,7 +1,27 @@
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  text-align: center;
+  background-color: #008DDA;
+
+}
 
 
-.mat-calendar {
+
+.mat-calendar{
   width: 500px; /* Defina o tamanho desejado */
-  height: 550px; /* Defina o tamanho desejado */
-  font-size: 12px; /* Tamanho da fonte do calendário */
+  height: 630px; /* Defina o tamanho desejado */
+
+}
+.demo-inline-calendar-card{
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+  background-color: #41C9E2;
+  color: #008DDA;
+
 }

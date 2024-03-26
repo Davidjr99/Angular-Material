@@ -7,12 +7,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { NavbarModule } from './navbar/navbar.module';
 import { ConteudoPrincipalComponent } from './conteudo-principal/conteudo-principal.component';
 import { MinhasAnotacoesComponent } from './minhas-anotacoes/minhas-anotacoes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { CalendarioComponent } from './calendario/calendario.component';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
+import { LoginComponent } from './login/login.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 @NgModule({
@@ -21,6 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
     ConteudoPrincipalComponent,
     MinhasAnotacoesComponent,
     CalendarioComponent,
+    LoginComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,8 +35,10 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     MatCardModule,
     MatDatepickerModule,
-    MatIconModule
-
+    MatIconModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatButtonModule,
   ],
   providers: [
     provideAnimationsAsync(),
