@@ -8,11 +8,18 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
-    path: '', component: CadastroComponent,
+    path: '', component: LoginComponent,
   },
   {
-    path: 'login', component: LoginComponent,
+    path: 'home', component: ConteudoPrincipalComponent,
   },
+  {
+    path: 'minhas-anotacoes', component: MinhasAnotacoesComponent,
+  },
+  {
+    path: 'cadastro', component: CadastroComponent,
+  },
+
   {
     path: 'calendario', component: CalendarioComponent
   }

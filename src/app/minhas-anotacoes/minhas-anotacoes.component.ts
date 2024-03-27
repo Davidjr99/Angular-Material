@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 
@@ -19,6 +20,7 @@ export class MinhasAnotacoesComponent {
 tarefas: Task[] = [{ id: 1, name: 'Tarefa 1'}];
 nextId: number = 2;
 
+constructor(route: Router){}
 
 adicionarTarefa() {
  const newTask: Task = {

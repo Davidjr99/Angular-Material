@@ -1,7 +1,9 @@
 <main class="fundoLogin">
   <h1 class="tituloPrincipal">Calen Daily
     <br><br>
-    Realize seu cadastro, com seu melhor E-mail
+    Realize seu cadastro, com seu melhor
+    <br><br>
+    Email
     <br><br>
     e uma senha para sua segurança.
   </h1>
@@ -22,7 +24,7 @@
 
   <mat-form-field appearance="fill">
     <mat-label>Senha</mat-label>
-    <input matInput type="password" placeholder="Digite sua senha">
+    <input matInput type="password" [formControl]="passwordFormControl"  placeholder="Digite sua senha">
   </mat-form-field>
 
   <div class="btn-login">

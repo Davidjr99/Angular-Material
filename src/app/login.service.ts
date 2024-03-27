@@ -1,22 +1,42 @@
 import { Injectable } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import IUser from './interfaces/IUser';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  users: string[] = [];
+  users: IUser[] = [];
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.loadUsers();
+   }
 
-  verifyUser(email: string): boolean {
-    return this.users.includes(email);
+   loadUsers(){
+    const users = localStorage.getItem('users');
+    if (users){
+      this.users = JSON.parse(users);
+    }
+   }
+
+   saveUsers(){
+    localStorage.setItem('users', JSON.stringify(this.users));
+   }
+
+  verifyUser(user: IUser): boolean {
+    const userFound = this.users.find(({ email, password}) => user.email == email && user.password == password);
+
+    if (!userFound) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
-  addUser(email: string): void {
-    this.users.push(email);
+  addUser(user: IUser) {
+    this.users.push(user);
+    this.saveUsers();
   }
-
-
-
 }

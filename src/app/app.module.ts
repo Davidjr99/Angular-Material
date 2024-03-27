@@ -17,6 +17,11 @@ import { LoginComponent } from './login/login.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { PopUpComponent } from './pop-up/pop-up.component';
+import { MatListModule } from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -27,6 +32,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     CalendarioComponent,
     LoginComponent,
     CadastroComponent,
+    PopUpComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -39,6 +47,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatBottomSheetModule,
+    MatListModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync(),

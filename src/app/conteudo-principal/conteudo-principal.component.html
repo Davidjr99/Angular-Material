@@ -1,5 +1,24 @@
-<p class="conteudo1">Bem vindo ao ANOTAÇÕES!</p>
+<main class="bodyPrincipal">
 
-<
+<p class = "conteudo1" >Bem-vindo Ao CalenDaily!</p>
+
+<h2 class="conteudo1">Nos ajude a melhorar, descreva abaixo oque gostaria em nosso
+  <br><br>
+   app!</h2>
+
+
+
+   <form class="example-form" action="https://formspree.io/f/mjvnagno" method="POST">
+    <mat-form-field class="example-full-width">
+      <mat-label>Digite aqui!</mat-label>
+      <!-- Adicione o atributo 'name' ao input -->
+      <input [(ngModel)]="message" matInput #message="ngModel" maxlength="256" name="message" placeholder="Max - 256 caracteres">
+    </mat-form-field>
+
+    <button (click)="sendMessage()" mat-raised-button>Enviar mensagem</button>
+  </form>
+
+
+</main>
 
 

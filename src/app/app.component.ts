@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,21 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-material';
+  showNavBar: boolean = false;
 
+  constructor(private router: Router) {}
 
+  ngOnInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const currentRoute = this.router.url;
+
+        if (currentRoute == '/' || currentRoute == '/cadastro') {
+          this.showNavBar = true;
+        } else {
+          this.showNavBar = false;
+        }
+      }
+    });
+  }
 }

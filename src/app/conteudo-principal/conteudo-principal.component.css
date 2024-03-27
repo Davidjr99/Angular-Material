@@ -1,9 +1,27 @@
-.conteudo1{
-  width: 100%;
+.bodyPrincipal{
+  background-color: rgb(109, 196, 162);
   height: 100%;
-  background-color: black;
-  color: white;
+
+}
+.example-full-width{
+  width: 400px;
+}
+
+.example-form{
+
   text-align: center;
+  padding-top: 290px;
+}
+
+.conteudo1{
+
+  background-color: rgb(109, 196, 162);
+  color: black;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 30px;
+  font-family: 'Rubik Scribble';
+
 
 
 }
