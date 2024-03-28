@@ -66,7 +66,7 @@ export class LoginComponent {
           this.openPopUp();
         }
       } else {
-        this.route.navigate(['home']);
+        // this.route.navigate(['home']);
       }
     }
 

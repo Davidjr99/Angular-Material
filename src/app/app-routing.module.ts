@@ -5,24 +5,31 @@ import { MinhasAnotacoesComponent } from './minhas-anotacoes/minhas-anotacoes.co
 import { CalendarioComponent } from './calendario/calendario.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuardService } from './auth-guard.service';
+import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   {
     path: '', component: LoginComponent,
   },
+
   {
-    path: 'home', component: ConteudoPrincipalComponent,
+    path: 'home', component: ConteudoPrincipalComponent, canActivate: [AuthGuardService]
   },
   {
-    path: 'minhas-anotacoes', component: MinhasAnotacoesComponent,
+    path: 'conteudo-principal', component: ConteudoPrincipalComponent, canActivate: [AuthGuardService]
+  },
+  {
+    path: 'minhas-anotacoes', component: MinhasAnotacoesComponent, canActivate: [AuthGuardService]
   },
   {
     path: 'cadastro', component: CadastroComponent,
   },
 
   {
-    path: 'calendario', component: CalendarioComponent
-  }
+    path: 'calendario', component: CalendarioComponent, canActivate: [AuthGuardService]
+  },
+  { path: '**', component: ErrorComponent },
 
 ];
 

@@ -21,6 +21,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -33,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     CadastroComponent,
     PopUpComponent,
+    ErrorComponent,
 
 
   ],

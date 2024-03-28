@@ -42,7 +42,8 @@ export class CadastroComponent {
     } else {
       const user: IUser = {
         email,
-        password
+        password,
+        isLogged: false
       };
       this.loginService.addUser(user);
       this.route.navigate(['']);

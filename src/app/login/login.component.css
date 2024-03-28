@@ -26,12 +26,23 @@
 
 
 }
+
+
+.campoHelp{
+  height: 35px ;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-login{
   width: 100px; /* largura do contêiner */
-  height: 40px; /* altura do contêiner */
+  height: 35px; /* altura do contêiner */
   background-color: #F7EEDD; /* cor de fundo do contêiner */
   border-radius: 15px; /* arredondamento das bordas do contêiner */
   display: flex;
   justify-content: center;
+
+
 }
 
