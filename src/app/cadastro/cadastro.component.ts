@@ -49,14 +49,6 @@ export class CadastroComponent {
       this.route.navigate(['']);
     }
 
-
-    // if (email) {
-    //   this.loginService.addUser(email);
-    //   alert('Cadastro realizado com sucesso!');
-    //   this.route.navigate(['/']);
-    // } else {
-    //   alert('Insira um email válido!')
-    // }
   }
 
 }

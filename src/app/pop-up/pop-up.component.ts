@@ -17,4 +17,10 @@ export class PopUpComponent {
       event.preventDefault();
     }
 
+    goToRegister(event: MouseEvent): void{
+      this.popUpService.goToRegister();
+      this._bottomSheetRef.dismiss();
+      event.preventDefault();
+    }
+
 }

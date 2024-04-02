@@ -1,14 +1,17 @@
 <div style="text-align: center">
 
-  <h1> Tem Uma Nova Anotação ?</h1>
+  <h1 style="font-family: Scribble;"> Tem Uma Nova Anotação ?</h1>
   <input [(ngModel)]="tarefa" type="text">
   <button (click)= "adicionarTarefa()" type="button">Adicionar</button>
-   <mat-card *ngFor="let tarefa of tarefas">
+  <div cdkDropList (cdkDropListDropped)="drop($event)">
+   <mat-card *ngFor="let tarefa of tarefas; let i = index" cdkDrag>
     <mat-card-content>
       {{ tarefa.name }}
-      <mat-icon (click)="removerTarefa(tarefa.id)" aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon>
+      <mat-icon (click)="removerTarefa(tarefa.id)" aria-hidden="false" aria-label="Example close icon" fontIcon="close"></mat-icon>
     </mat-card-content>
+    <mat-icon (click)="editarTarefa(tarefa.id)" aria-hidden="false" aria-label="Example edit icon">edit</mat-icon>
   </mat-card>
+</div>
 
 
 

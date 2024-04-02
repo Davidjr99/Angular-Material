@@ -1,12 +1,26 @@
 mat-card {
-  margin: 20px;
+  margin-right: 40px;
+  margin-left: 150px;
+  margin-top: 15px;
   padding: 20px;
-  width: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  border-radius: 30px;
+  background-color: aquamarine;
+}
+
+mat-icon {
+  float: right;
 }
 
 mat-card-content {
   font-size: 16px;
   color: #ad5c5c;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: black;
 }

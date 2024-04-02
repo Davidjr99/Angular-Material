@@ -22,6 +22,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorComponent } from './error/error.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 
@@ -51,7 +52,10 @@ import { ErrorComponent } from './error/error.component';
     MatButtonModule,
     MatBottomSheetModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule,
+
+
   ],
   providers: [
     provideAnimationsAsync(),
