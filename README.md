@@ -1,27 +1,26 @@
-# AngularMaterial
+# Calendaily 🌅
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Descrição do Projeto
 
-## Development server
+Calendaily é um projeto de portfólio para estudos em Angular Material. Este projeto inclui um bloco de anotações com cadastro e senha, bem como um calendário. É um projeto de organização de rotina que ajuda os usuários a manterem-se organizados e produtivos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Recursos
 
-## Code scaffolding
+- **Bloco de Anotações**: Permite aos usuários criar, editar e excluir anotações. Cada anotação pode ser protegida por uma senha para garantir a privacidade.
+- **Calendário**: Ajuda os usuários a acompanhar seus compromissos e tarefas diárias.
+- **Sem Banco de Dados**: Como este é um projeto de portfólio, não utiliza um banco de dados. Todas as informações são salvas no LocalStorage.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como Usar
 
-## Build
+1. Clone o repositório para o seu computador.
+2. Instale as dependências usando `npm install`.
+3. Inicie o servidor usando `ng serve`.
+4. Abra o navegador e navegue até `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Contribuição
 
-## Running unit tests
+Contribuições são sempre bem-vindas. Se você tiver alguma sugestão ou quiser contribuir, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Licença
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este projeto está licenciado sob a licença MIT.
